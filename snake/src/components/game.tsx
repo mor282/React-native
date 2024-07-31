@@ -42,9 +42,6 @@ export default function Game():JSX.Element //function-name:return-value
                     //every 50 ms (MOVE_INTERVAL) move the snake
                     const intervalId = setInterval( () => {!isPause && moveSnake();}, MOVE_INTERVAL);
                     return () => clearInterval(intervalId);
-                    //39.32
-                    //https://www.youtube.com/watch?v=hXogPCM4FS8
-                    //https://www.youtube.com/watch?v=KqV_W5sCn7w
                 }
             }, 
         [snake, isGameOver, isPause]
